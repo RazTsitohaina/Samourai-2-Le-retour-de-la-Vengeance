@@ -62,7 +62,7 @@ public class Humain {
 	 * son nom et sa boisson favorite
 	 */
 	public void direbonjour() {
-		parler("Bonjour ! Je m'appelle "+this.getNom()+" et j'aime boire du "+this.getBoisson_fav());
+		parler("Bonjour ! Je m'appelle "+this.getNom()+" et j'aime boire du "+this.getBoisson_fav()+" et j'ai "+this.getArgent());
 			
 	}
 	

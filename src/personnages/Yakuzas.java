@@ -19,7 +19,7 @@ public class Yakuzas extends Humain{
 	protected int perdre(){
 		int argent = this.getArgent();
 		this.perdreArgent(argent);
-		System.out.println("J'ai perdu ! je n'ai plus d'argent !");
+		this.parler("J'ai perdu ! je n'ai plus d'argent !");
 		return argent;
 	}
 
@@ -40,6 +40,10 @@ public class Yakuzas extends Humain{
 		this.parler("Et mon clan est "+this.getClan());
 	}
 	
-	
-	
+	public void extorquer(Commercants c) {
+		this.parler("Jai extorquer un commercant");
+		int argent = c.seFaireExtorquer();
+		this.gagnerArgent(argent);
+	}
+
 }

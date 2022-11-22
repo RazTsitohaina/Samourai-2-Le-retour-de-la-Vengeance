@@ -27,13 +27,13 @@ public class Ronin extends Humain{
 	
 	public void provoquer(Yakuzas y) {
 		if((this.getHonneur()*2) > y.getReputation()) {
-			System.out.println("\nJ'ai gagner");
+			this.parler("J'ai gagner mon duel");
 			this.gagnerArgent(y.perdre());
 		}
 		else {
 			y.gagner();
 			this.honneur-=1;
-			System.out.println("J'ai perdu mon duel face au yakuza\n");
+			this.parler("J'ai perdu mon duel face au yakuza\n");
 		}
 	}
 

@@ -9,7 +9,7 @@ public class Commercants extends Humain{
 	public int seFaireExtorquer() {
 		int argent = this.getArgent();
 		this.perdreArgent(argent);
-		System.out.println("\n JE me suis fais extorquer j'ai perdue mon argent !!\n");
+		this.parler("Je me suis fais extorquer j'ai perdue mon argent !!");
 		return argent;
 	}
 	
