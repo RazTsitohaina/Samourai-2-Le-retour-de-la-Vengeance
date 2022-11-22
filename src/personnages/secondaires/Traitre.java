@@ -48,7 +48,7 @@ public class Traitre extends Samourais{
 		Integer a = this.niv_traitrise-=(argent/10);
 		this.perdreArgent(argent);
 		h.gagnerArgent(argent);
-		this.parler("Je fais ami ami");
+		this.parler("Je fais ami ami avec "+h.getNom());
 		
 		if(a>=0) {
 			this.niv_traitrise = a;
