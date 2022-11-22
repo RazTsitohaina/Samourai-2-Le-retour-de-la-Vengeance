@@ -1,4 +1,6 @@
-package personnages;
+package personnages.principales;
+
+import personnages.Humain;
 
 public class Ronin extends Humain{
 	private int honneur;
@@ -21,8 +23,10 @@ public class Ronin extends Humain{
 
 
 	public void donnerArgent(int argent, Commercants c) {
+		this.parler("Tiens "+c.getNom()+"je te donne "+argent);
 		this.perdreArgent(argent);
 		c.gagnerArgent(argent);
+		c.parler("Merci pour l'argent");
 	}
 	
 	public void provoquer(Yakuzas y) {

@@ -1,4 +1,6 @@
-package personnages;
+package personnages.principales;
+
+import personnages.Humain;
 
 public class Commercants extends Humain{
 	

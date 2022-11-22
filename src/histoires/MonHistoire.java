@@ -1,8 +1,8 @@
 package histoires;
-import personnages.Commercants;
 import personnages.Humain;
-import personnages.Ronin;
-import personnages.Yakuzas;
+import personnages.principales.Commercants;
+import personnages.principales.Ronin;
+import personnages.principales.Yakuzas;
 
 
 public class MonHistoire {
