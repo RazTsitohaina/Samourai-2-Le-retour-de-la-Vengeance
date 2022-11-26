@@ -22,6 +22,7 @@ public class MonHistoire {
 		ronin.donnerArgent(10, commercant);
 		ronin.provoquer(yakuza);
 		ronin.direbonjour();
+		
 	}
 	
 }
