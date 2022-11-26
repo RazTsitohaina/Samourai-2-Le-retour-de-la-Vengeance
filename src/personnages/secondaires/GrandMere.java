@@ -38,10 +38,10 @@ public class GrandMere extends Humain{
 		if(this.nbH!=30) {
 			memoire[this.nbH]=h;
 			this.nbH+=1;
-			parler("Enchainter "+h.getNom());
+			this.parler("Enchainter "+h.getNom());
 		}
 		else {
-			parler("Oh je ne m'en souviens plus");
+			this.parler("Oh je ne m'en souviens plus");
 			}
 	}
 	
@@ -49,10 +49,10 @@ public class GrandMere extends Humain{
 		for(int i = 0;i<this.nbH;i++) {
 			Humain h = memoire[i];
 			if (h instanceof Traitre) {
-				parler(h.getNom()+ "est un TRAITRE");
+				this.parler(h.getNom()+ "est un TRAITRE");
 			}
 			else {
-				parler("Je pense que "+h.getNom()+" est "+humainHasard());
+				this.parler("Je pense que "+h.getNom()+" est "+humainHasard());
 			}
 		}
 	}

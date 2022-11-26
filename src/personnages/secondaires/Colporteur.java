@@ -12,7 +12,7 @@ public class Colporteur extends Commercants{
 		int argent = this.getArgent()/2;
 		this.perdreArgent(argent);
 		this.parler("Je me suis fais extorquer j'ai perdue mon argent !!");
-		this.parler("Mais je suis main j'ai donné que la moité! GNNGNGN");
+		this.parler("Mais je suis malin j'ai donné que la moité! GNNGNGN");
 		return argent;
 	}
 }
