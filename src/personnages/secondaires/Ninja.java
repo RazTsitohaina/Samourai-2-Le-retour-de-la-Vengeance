@@ -2,10 +2,12 @@ package personnages.secondaires;
 
 import java.util.Random;
 
+import personnages.principales.Commercants;
 import personnages.principales.Yakuzas;
 
 public class Ninja extends Yakuzas{
 	private String clanSecret;
+	private static final int seuil = 10;
 	private static final String[] clansNinja = {"of Shadows", 
 			"of Mist", "of Clouds", 
 			"of Fog", "of Darkness"};
@@ -25,6 +27,12 @@ public class Ninja extends Yakuzas{
 		this.parler("Tu connais mon clan secret maintenant je dois te tuer !");
 		}
 		
+	public void extorquer(Commercants c) {
+		while (c.getArgent()>seuil) {
+			super.extorquer(c);
+		}
+		this.parler("Voila je suis satisfait !!");
+	}
 }
 	
 

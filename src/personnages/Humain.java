@@ -50,7 +50,7 @@ public class Humain {
 	}
 	
 	/**
-	 * Méthode parler : fait parler l'humain
+	 * Mï¿½thode parler : fait parler l'humain
 	 * @param texte : dialogue 
 	 */
 	public void parler(String texte) {
